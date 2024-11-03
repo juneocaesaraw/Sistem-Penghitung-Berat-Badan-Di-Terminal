@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include<conio.h>
+int main (){
+    int Tinggi_Badan;
+    char lagi; 
+
+    start:
+    printf("=========================\n");
+    printf("Selamat Datang Terminal\n");
+     printf("=========================\n");
+
+    do
+    {
+    printf("Silahkan Cek Tinggi Badan Terlebih Dahulu\n");
+    
+    printf("Masukkan tinggi badan Anak Anda:");
+    scanf("%d", &Tinggi_Badan);
+
+    if (Tinggi_Badan>=90)
+    {
+        printf("Anda Harus membeli Tiket Anak Anda!!!\n");
+        
+    }else{
+        printf("Anda Tidak Perlu Membeli Tiket Untuk Anak Anda.\n");
+    }
+
+    printf("Ingin Memeriksa kembali? (y/t):");
+    scanf(" %c", &lagi); 
+
+    } while (lagi == 'y'); 
+
+    printf("Terimakasih");
+    
+    getch();
+    system("cls");
+    goto start;
+    return 0;
+}
